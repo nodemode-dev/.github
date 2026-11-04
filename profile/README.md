@@ -41,4 +41,10 @@ Every repository states its own licence. Most apps are Apache-2.0; FormPortal, F
 
 The apps are free and stay free. If they help you, you can [support FormAI](https://formai.studio/support/).
 
-Maintained by [@nodemode-ai](https://github.com/nodemode-ai) and [@gbarnai](https://github.com/gbarnai). Copyright NodeAgentc, Inc.
+## Contributors
+
+- [@nodemode-ai](https://github.com/nodemode-ai)
+- [@gbarnai](https://github.com/gbarnai)
+- [@nodemode-dev](https://github.com/nodemode-dev)
+
+Copyright NodeAgentc, Inc.
