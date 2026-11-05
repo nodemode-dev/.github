@@ -43,8 +43,8 @@ The apps are free and stay free. If they help you, you can [support FormAI](http
 
 ## Contributors
 
-- [@nodemode-ai](https://github.com/nodemode-ai)
-- [@gbarnai](https://github.com/gbarnai)
-- [@nodemode-dev](https://github.com/nodemode-dev)
+- [@nodemode-ai](https://github.com/nodemode-ai) - Owner
+- [@gbarnai](https://github.com/gbarnai) - Co-Owner
+- [@nodemode-dev](https://github.com/nodemode-dev) - Organization
 
 Copyright NodeAgentc, Inc.
