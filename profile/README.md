@@ -8,7 +8,7 @@
 <sub>&nbsp;</sub>
 <br>
 
-FormAI, free open-source desktop apps from NodeAgentc, Inc. Also, check out [NodeMode](https://www,nodemode.ai), our cloud-hosted enterprise platform.
+FormAI, free open-source desktop apps from NodeAgentc, Inc. Also, check out [NodeMode](https://www.nodemode.ai), our cloud-hosted enterprise platform.
 
 Each Form app does one job well and runs on your own computer: your files stay on your machine. Many of them can also be driven by an AI agent through MCP when you want that, and they work fine without it.
 
