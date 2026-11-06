@@ -28,7 +28,7 @@ Download from **[formai.studio](https://formai.studio/apps/)**. Every release is
 | [FormPortal](https://formai.studio/formportal/) | One place to install, open and update every Form app |
 | [FormTray](https://formai.studio/formtray/) | One dock icon for every Form app: switch, launch and arrange |
 | [FormMCP](https://formai.studio/formmcp/) | One MCP server that shows agents every Form app |
-| [FormSkills](https://formai.studio/formskill/) | The apps' skills, ready to install into your agent |
+| [FormSkills](https://formai.studio/formskills/) | The apps' skills, ready to install into your agent |
 
 More apps are on the way; [formai.studio/apps](https://formai.studio/apps/) shows what is coming next.
 
