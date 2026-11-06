@@ -1,9 +1,7 @@
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/nodemode-dev/.github/main/profile/formai-wordmark-white.png">
-    <img alt="FormAI" src="https://raw.githubusercontent.com/nodemode-dev/.github/main/profile/formai-wordmark-black.png" width="420">
-  </picture>
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/nodemode-dev/.github/main/profile/formai-wordmark-white.png">
+  <img alt="FormAI" src="https://raw.githubusercontent.com/nodemode-dev/.github/main/profile/formai-wordmark-black.png" width="420">
+</picture>
 
 FormAI, free open-source desktop apps from NodeAgentc, Inc. Also, check out [NodeMode](https://nodemode.ai), our cloud-hosted enterprise platform.
 
