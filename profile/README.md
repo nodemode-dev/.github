@@ -41,7 +41,7 @@ Every repository states its own licence. Most apps are Apache-2.0; FormPortal, F
 - **Bugs and ideas:** open an issue in the app's repository.
 - **Security problems:** report them privately from the repository's Security tab, never in a public issue. Each repository's SECURITY.md says what to expect.
 - **Code:** read the repository's CONTRIBUTING.md first.
-- **Anything else:** support@nodemode.ai
+- **Anything else:** support@formai.studio for FormAI or support@nodemode.ai for NodeMode
 
 ## Support the work
 
