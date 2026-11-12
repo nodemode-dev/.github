@@ -16,27 +16,35 @@ Each Form app does one job well and runs on your own computer: your files stay o
 
 Download from **[formai.studio](https://formai.studio/apps/)**. Every release is built and signed by [FormCompiler](https://formai.studio/formcompiler/), our public build pipeline. FormPortal installs the apps and keeps them up to date.
 
+<!-- apps:start -->
 | App | What it does |
 | --- | --- |
+| [FormPortal](https://formai.studio/formportal/) | One place to install, open and update every FormAI app |
+| [FormCut](https://formai.studio/formcut/) | Video editing on your own machine: cut, grade, caption and export |
 | [FormVis](https://formai.studio/formvis/) | Layered image editing: layers, masks, selections, painting and export |
-| [FormCut](https://formai.studio/formcut/) | Video editing: cut, grade, caption and export |
 | [FormWav](https://formai.studio/formwav/) | Audio editing: record, edit, repair, mix and export |
+| [FormLit](https://formai.studio/formlit/) | Photo library and raw development on your own machine |
+| [FormDesign](https://formai.studio/formdesign/) | Page layout and PDF work in one app: lay out, publish, read, sign and edit |
+| [FormPath](https://formai.studio/formpath/) | Vector illustration: paths, shapes, type and artboards |
 | [FormVFX](https://formai.studio/formvfx/) | Motion graphics and visual effects on a layered timeline |
-| [FormLit](https://formai.studio/formlit/) | Photo library and raw development |
 | [FormEncoder](https://formai.studio/formencoder/) | Convert, compress and export media in batches, with presets |
-| [FormPDF](https://formai.studio/formpdf/) | View, comment, fill, sign and edit PDFs |
-| [FormDeck](https://formai.studio/formdeck/) | Presentations: build slides, present and export |
 | [Form.md](https://formai.studio/formmd/) | Notes, docs and databases built on plain Markdown files |
-| [FormPortal](https://formai.studio/formportal/) | One place to install, open and update every Form app |
-| [FormTray](https://formai.studio/formtray/) | One dock icon for every Form app: switch, launch and arrange |
-| [FormMCP](https://formai.studio/formmcp/) | One MCP server that shows agents every Form app |
-| [FormSkills](https://formai.studio/formskills/) | The apps' skills, ready to install into your agent |
+| [FormDAM](https://formai.studio/formdam/) | A library for every photo, video and asset you keep |
+| [FormDeck](https://formai.studio/formdeck/) | Presentations: build slides, present and export |
+| [FormMCP](https://formai.studio/formmcp/) | One MCP server that shows agents every FormAI app and loads an app's own tools only when a task needs it |
+| [FormSkills](https://formai.studio/formskills/) | The FormAI apps' released skills: read, download, keep your own edits and install them into your agent |
+| [FormPDF](https://formai.studio/formpdf/) | A PDF editor that runs on your computer: view, comment, fill, sign and edit |
+| [FormTray](https://formai.studio/formtray/) | One dock icon for every FormAI app: switch, launch and arrange the family |
+| [Form.ext](https://formai.studio/formext/) | The extension studio: start from a working project, preview it in a simulated app, check it against the contract, then run, sign and publish it |
+<!-- apps:end -->
 
 More apps are on the way; [formai.studio/apps](https://formai.studio/apps/) shows what is coming next.
 
 ## Licences
 
-Every repository states its own licence. Most apps are Apache-2.0; FormPortal, FormMCP and FormSkills are GPL-3.0-only.
+<!-- licences:start -->
+Every repository states its own licence. Most apps are Apache-2.0; FormPortal, FormMCP, FormSkills and Form.ext are GPL-3.0-only.
+<!-- licences:end -->
 
 ## Help and contributing
 
