@@ -33,9 +33,12 @@ Download from **[formai.studio](https://formai.studio/apps/)**. Every release is
 | [FormDeck](https://formai.studio/formdeck/) | Presentations: build slides, present and export |
 | [FormMCP](https://formai.studio/formmcp/) | One MCP server that shows agents every FormAI app and loads an app's own tools only when a task needs it |
 | [FormSkills](https://formai.studio/formskills/) | The FormAI apps' released skills: read, download, keep your own edits and install them into your agent |
+| [FormCel](https://formai.studio/formcel/) | Spreadsheets on your own machine, with Excel files in and out |
 | [FormPDF](https://formai.studio/formpdf/) | A PDF editor that runs on your computer: view, comment, fill, sign and edit |
+| [FormTxt](https://formai.studio/formtxt/) | Documents on your own machine: paginated and pageless, with .docx and .odt round trips |
 | [FormTray](https://formai.studio/formtray/) | One dock icon for every FormAI app: switch, launch and arrange the family |
 | [Form.ext](https://formai.studio/formext/) | The extension studio: start from a working project, preview it in a simulated app, check it against the contract, then run, sign and publish it |
+| [FormTools](https://formai.studio/formtools/) | Viewers for almost any file, batch image tools, 3D viewing and desktop utilities in one window |
 <!-- apps:end -->
 
 More apps are on the way; [formai.studio/apps](https://formai.studio/apps/) shows what is coming next.
