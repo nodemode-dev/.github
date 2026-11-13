@@ -1,0 +1,68 @@
+name: Apps table
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "scripts/**"
+      - "tests/**"
+      - "profile/README.md"
+      - ".github/workflows/apps-table.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: apps-table
+  cancel-in-progress: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pytest==8.3.3
+      - run: python -m pytest -q tests
+
+  refresh:
+    needs: test
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Regenerate the apps table from the live catalogue
+        run: python scripts/apps_table.py
+      - name: Open or update the pull request
+        run: |
+          if git diff --quiet -- profile/README.md; then
+            echo "README is current"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          branch="bot/apps-table-$(git hash-object profile/README.md | cut -c1-10)"
+          if git ls-remote --exit-code --heads origin "$branch" >/dev/null; then
+            echo "$branch already proposes this table"
+            exit 0
+          fi
+          git switch -c "$branch"
+          git commit -m "docs: refresh the apps table from the formai.studio catalogue" -- profile/README.md
+          git push origin "$branch"
+          gh pr create --head "$branch" --base main \
+            --title "docs: refresh the apps table from the formai.studio catalogue" \
+            --body "The apps table and the licence line in profile/README.md, regenerated from https://formai.studio/catalog/v1/apps.json (live apps only). Opened by the Apps table workflow."
+          gh pr list --state open --json number,headRefName --jq '.[] | select(.headRefName | startswith("bot/apps-table-")) | select(.headRefName != "'"$branch"'") | .number' |
+            while read -r old; do gh pr close "$old" --delete-branch --comment "Superseded by the newer table in $branch."; done
