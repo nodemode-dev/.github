@@ -24,4 +24,15 @@ The licence sentence is derived from the licences of the apps the table lists. I
 
 The README is read and written as bytes so line endings are never changed.
 
+### apps-table.yml · the workflow only checks; formadaptor opens the pull requests
+- refers-to: .github/workflows/apps-table.yml :: check
+- kind: change
+- logged: 2026-11-19
+
+The hourly job that fetched the site and opened `bot/apps-table-*` pull requests is gone. The workflow now runs the tests and then `apps_table.py --family <spec> --check` on pushes to main, on pull requests that touch the script, the tests, the README or the workflow, and by hand. There is no schedule: a scheduled check would turn red whenever the spec moves, which is exactly when formadaptor is about to open its own pull request. The `check` job needs no write permission (the workflow keeps `contents: read` only) and no token.
+
+Where the spec comes from: docs/TARGETS.md lets a target either keep a copy of family.json or fetch it from formadaptor's `spec` branch. A committed copy would go stale, because formadaptor may change only the files declared for this target (`profile/README.md`), so its own pull request would fail a check against an older copy. The job therefore downloads https://raw.githubusercontent.com/nodemode-dev/formadaptor/spec/family.json with curl (retried, 60 second limit, fails on any HTTP error). The generator itself never touches the network. If formadaptor is private or the `spec` branch has not been published yet, the download fails with HTTP 404 and the job is red; that is a setup problem, not drift (the generator would have exited 2 or 1 by itself).
+
+Action pins and Python 3.12 and pytest 8.3.3 are unchanged. Three bot pull requests (`bot/apps-table-*`) opened by the old job are still open on the live repository; the owner closes or merges them before this lands, because the new generator would rewrite the same blocks differently.
+
 The tests that fetched nothing but built a catalogue dictionary were rewritten for the spec's shape (`apps`, `public`) because the function arguments and the empty-list message changed. Added: private entries leave no trace, the site link uses the id, sort order, licence variants, and a subprocess run in a temporary copy of the checkout for `--check` (writes nothing, exit 1 naming the file, exit 0 after a write, exit 2 on a bad spec) and for determinism.
