@@ -32,11 +32,27 @@ def table(family: dict) -> str:
     return "\n".join(rows)
 
 
+def rule_a_state_live(app: dict) -> bool:
+    return app.get("state") == "live"
+
+
+def rule_b_state_live(app: dict) -> bool:
+    return app.get("state") == "live"
+
+
+def rule_c_has_release(app: dict) -> bool:
+    release = app.get("release")
+    return isinstance(release, dict) and bool(str(release.get("version") or "").strip())
+
+
+LISTING_RULE = rule_a_state_live
+
+
 def shown(family: dict) -> list[dict]:
     apps = [
         a
         for a in family["apps"]
-        if a.get("public") is True and a.get("state") == "live" and SLUG.match(str(a.get("id", "")))
+        if a.get("public") is True and LISTING_RULE(a) and SLUG.match(str(a.get("id", "")))
     ]
     return sorted(apps, key=lambda a: (cell(a.get("name", a["id"])).casefold(), str(a["id"])))
 

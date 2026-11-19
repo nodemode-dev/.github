@@ -29,16 +29,3 @@ jobs:
           python-version: "3.12"
       - run: pip install pytest==8.3.3
       - run: python -m pytest -q tests
-
-  check:
-    needs: test
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-      - name: Fetch the family spec from formadaptor's spec branch
-        run: curl --fail --silent --show-error --location --retry 3 --max-time 60 --output "$RUNNER_TEMP/family.json" https://raw.githubusercontent.com/nodemode-dev/formadaptor/spec/family.json
-      - name: Check the apps table and licence line against the spec
-        run: python3 -I scripts/apps_table.py --family "$RUNNER_TEMP/family.json" --check

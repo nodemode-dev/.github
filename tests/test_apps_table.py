@@ -53,6 +53,27 @@ def test_only_public_live_apps_with_safe_slugs_are_listed():
     assert "Evil" not in rows
 
 
+def test_the_listing_rule_today_is_state_live():
+    assert apps_table.LISTING_RULE is apps_table.rule_a_state_live
+    assert apps_table.rule_b_state_live({"state": "live"}) and not apps_table.rule_b_state_live({"state": "public"})
+
+
+def test_the_release_rule_needs_a_published_version_and_still_skips_private_apps(monkeypatch):
+    released = {"version": "1.2.3", "tag": "v1.2.3"}
+    family = {
+        "apps": [
+            {**app("formcut", "FormCut"), "release": released},
+            {**app("formtxt", "FormTxt", state="prelaunch"), "release": released},
+            {**app("formnew", "FormNew", state="prelaunch"), "release": None},
+            {**app("formempty", "FormEmpty"), "release": {"version": ""}},
+            {"id": "formsecret", "public": False, "state": "live", "release": released},
+        ]
+    }
+    assert [a["id"] for a in apps_table.shown(family)] == ["formcut", "formempty"]
+    monkeypatch.setattr(apps_table, "LISTING_RULE", apps_table.rule_c_has_release)
+    assert [a["id"] for a in apps_table.shown(family)] == ["formcut", "formtxt"]
+
+
 def test_nothing_about_a_private_app_is_written():
     out = apps_table.render(f"{apps_table.START}\n{apps_table.END}\n{apps_table.LICENCE_START}\n{apps_table.LICENCE_END}\n", FAMILY)
     for word in ("formsecret", "FormHidden", "formhidden", "private"):
