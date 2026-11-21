@@ -8,9 +8,9 @@
 <sub>&nbsp;</sub>
 <br>
 
-FormAI, free open-source desktop apps from NodeAgentc, Inc. Also, check out [NodeMode](https://www.nodemode.ai), our cloud-hosted enterprise platform.
+**Form** **A**lternative **I**nterfaces · `FormAI` - free, open source alternative platforms inspired by closed/gated/subscription-based apps, from NodeAgentc, Inc. Also, check out [NodeMode](https://www.nodemode.ai), our cloud-hosted enterprise platform.
 
-Each Form app does one job well and runs on your own computer: your files stay on your machine. Many of them can also be driven by an AI agent through MCP when you want that, and they work fine without it.
+Each Form app runs on your own computer: your files stay on your machine. Many of them can also be driven by an AI agent through an MCP when you want that [any app with an internal MCP also contains multiple skills tied to it's build], but work fine without AI as well. In addition, we've created [Form.ext](https://formai.studio/formext/) and [Form.ext Registry](https://https://github.com/nodemode-dev/form.ext-registry) to add them to the official suite of extensions available for everyone to use which can been seen [here](https://formai.studio/extensions/) as well as the extensions section in [FormPortal](https://formai.studio/formportal/).
 
 ## Get the apps
 
