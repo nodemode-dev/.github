@@ -3,7 +3,23 @@
 Living log of all comment content, explainers, rationale, TODOs and removed code for the scripts and the workflow in this repository. The source files stay comment-free; everything they would have said lives here, indexed. Read this first, then edit code surgically.
 
 Current build version: none (this repository has no version)
-Last updated: 2026-11-18 · the page is back to its published table; the workflow only runs tests; the listing rule is one named line
+Last updated: 2026-11-21 · the page lists the 26 apps the site shows as available: nine rows added by hand, the 17 others untouched
+
+### profile/README.md · the table lists the 26 apps that are out, nine rows added by hand
+- refers-to: profile/README.md (between `apps:start` and `apps:end`); scripts/apps_table.py :: LISTING_RULE (not changed)
+- kind: change
+- logged: 2026-11-21
+
+The owner asked for the page to be brought up to date. It listed 17 apps, the ones out by 10 November. The site's apps page shows 26 as available on 21 November: FormCel, FormTxt and FormTools (13 November), FormAT, FormRef and FormWeb (16 November), FormSurface, FormSculpt and FormFabric (19 November) came out since.
+
+Their nine rows were added by hand and the 17 existing rows were not touched, because the generator would have rewritten those too: the family spec's names and one-line descriptions differ from the published ones (`formMCP`, `formskills`, `form.ext`, "Form app" where the page says "FormAI app"), it sorts by name where the page follows the site's order, and its ids for FormPortal and FormDeck (`formai`, `formslide`) are not the site's page paths (`formportal`, `formdeck`).
+
+- Order: the site's own product order, which the 17 rows already followed. FormSurface and FormWeb after FormDeck; FormAT and FormCel after FormSkills; FormTxt and FormRef after FormPDF; FormSculpt, FormFabric and FormTools after Form.ext.
+- Text: each app's one-line description from the family spec of 21 November, without its last full stop, as the other rows are written.
+- Links: `formai.studio/[page]/`, each path read from the site's apps page on 21 November (`/format/` for FormAT).
+- Licence sentence: unchanged. All nine are Apache-2.0 in the family spec.
+
+Still open, as before: `LISTING_RULE` is `state == "live"`, which gives 11 rows from today's spec, so `--check` against the spec does not pass and the workflow does not run it. The rule that matches the page is "the site shows it as available", and the spec does not carry that.
 
 ### apps_table.py · the table and the licence line come from family.json, offline
 - refers-to: scripts/apps_table.py :: main, load_family, shown, table, licences, render; .github/workflows/apps-table.yml
