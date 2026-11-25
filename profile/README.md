@@ -43,14 +43,14 @@ Download from **[formai.studio](https://formai.studio/apps/)**. Every release is
 | [FormTray](https://formai.studio/formtray/) | One dock icon for every FormAI app: switch, launch and arrange the family |
 | [Form.ext](https://formai.studio/formext/) | The extension studio: start from a working project, preview it in a simulated app, check it against the contract, then run, sign and publish it |
 | [FormSculpt](https://formai.studio/formsculpt/) | 3D sculpting and modeling, with a Rust engine and a command set agents can drive |
+| [FormNET](https://formai.studio/formnet/) | The network tab for the whole computer: what websites, apps and the machine actually send |
 | [FormCAD](https://formai.studio/formcad/) | CAD studio: 2D drafting, parametric parts, NURBS surfaces and automation on OpenCascade |
 | [FormFabric](https://formai.studio/formfabric/) | Garment pattern design and cloth simulation: draw patterns, sew, drape and export |
 | [FormMorpheus](https://formai.studio/formmorpheus/) | Animation studio: draw frame by frame, keyframe or perform live on a timeline |
+| [FormSlot](https://formai.studio/formslot/) | Codebase memory for coding agents: what is built, where it lives and the rules it follows |
 | [FormTools](https://formai.studio/formtools/) | Viewers for almost any file, batch image tools, 3D viewing and desktop utilities in one window |
+| [FormSubstrate](https://formai.studio/formsubstrate/) | A code and text editor that runs Claude Code agents, each in its own git worktree |
 | [FormPublisher](https://formai.studio/formpublisher/) | Open FormWeb sites, check every route, package them and prepare them for hosts |
-| [FormRig](https://formai.studio/formrig/) | Character rigging: skeleton, skin, controls, face and retargeting from any mesh |
-| [FormCraft](https://formai.studio/formcraft/) | Images, video, audio, 3D and worlds from models you choose, on your own keys and your own computer |
-| [FormPromo](https://formai.studio/formpromo/) | Promo films from your own media, style and sourced claims |
 <!-- apps:end -->
 
 More apps are on the way; [formai.studio/apps](https://formai.studio/apps/) shows what is coming next.
@@ -58,7 +58,7 @@ More apps are on the way; [formai.studio/apps](https://formai.studio/apps/) show
 ## Licences
 
 <!-- licences:start -->
-Every repository states its own licence. Most apps are Apache-2.0; FormPortal, FormMCP, FormSkills, Form.ext, FormPublisher and FormPromo are GPL-3.0-only.
+Every repository states its own licence. Most apps are Apache-2.0; FormPortal, FormMCP, FormSkills, Form.ext, FormPublisher, FormSlot and FormSubstrate are GPL-3.0-only.
 <!-- licences:end -->
 
 ## Help and contributing
