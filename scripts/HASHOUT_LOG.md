@@ -3,7 +3,20 @@
 Living log of all comment content, explainers, rationale, TODOs and removed code for the scripts and the workflow in this repository. The source files stay comment-free; everything they would have said lives here, indexed. Read this first, then edit code surgically.
 
 Current build version: none (this repository has no version)
-Last updated: 2026-11-24 · the page lists the 29 apps the site shows as available: three rows added by hand (FormCAD, FormMorpheus, FormPublisher), the 26 others untouched
+Last updated: 2026-11-24 · the page lists the 29 apps the site shows as available, and the three of the 25 November launch (FormRig, FormCraft, FormPromo); 32 rows
+
+### profile/README.md · three rows for the Group 6 launch of 25 November, written the day before
+- refers-to: profile/README.md (between `apps:start` and `apps:end`, and the licence sentence)
+- kind: change
+- logged: 2026-11-24
+- status: must not reach `main` before the launch, 25 November at noon Eastern (17:00 UTC)
+
+The owner asked for an entry for the three apps that come out on 25 November. formcompiler's changelog for 0.22.0 names the Group 6 launch of that day: FormRig and FormCraft, registered then, and FormPromo, registered earlier. The site counts three apps for that date and does not name them yet.
+
+- Order: after FormPublisher, at the end of the table, as FormRig, FormCraft, FormPromo. The site's own position for them could not be read before the launch; move the rows if the apps page places them elsewhere.
+- Text: each app's `catalog.summary` in formcompiler's registry 0.22.0, without its last full stop.
+- Links: `formai.studio/formrig/`, `/formcraft/` and `/formpromo/`, from each app's catalogue id. These pages do not answer before the launch, so the paths are not checked; every other app whose id and page path differ (FormPortal, FormDeck) is older.
+- Licence sentence: FormPromo is GPL-3.0-only in the registry and is named last; FormRig and FormCraft are Apache-2.0. The three repositories are private today, so their LICENSE files were not read.
 
 ### profile/README.md · the table lists the 29 apps that are out, three rows added by hand
 - refers-to: profile/README.md (between `apps:start` and `apps:end`, and the licence sentence); scripts/apps_table.py (not changed)

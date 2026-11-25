@@ -48,6 +48,9 @@ Download from **[formai.studio](https://formai.studio/apps/)**. Every release is
 | [FormMorpheus](https://formai.studio/formmorpheus/) | Animation studio: draw frame by frame, keyframe or perform live on a timeline |
 | [FormTools](https://formai.studio/formtools/) | Viewers for almost any file, batch image tools, 3D viewing and desktop utilities in one window |
 | [FormPublisher](https://formai.studio/formpublisher/) | Open FormWeb sites, check every route, package them and prepare them for hosts |
+| [FormRig](https://formai.studio/formrig/) | Character rigging: skeleton, skin, controls, face and retargeting from any mesh |
+| [FormCraft](https://formai.studio/formcraft/) | Images, video, audio, 3D and worlds from models you choose, on your own keys and your own computer |
+| [FormPromo](https://formai.studio/formpromo/) | Promo films from your own media, style and sourced claims |
 <!-- apps:end -->
 
 More apps are on the way; [formai.studio/apps](https://formai.studio/apps/) shows what is coming next.
@@ -55,7 +58,7 @@ More apps are on the way; [formai.studio/apps](https://formai.studio/apps/) show
 ## Licences
 
 <!-- licences:start -->
-Every repository states its own licence. Most apps are Apache-2.0; FormPortal, FormMCP, FormSkills, Form.ext and FormPublisher are GPL-3.0-only.
+Every repository states its own licence. Most apps are Apache-2.0; FormPortal, FormMCP, FormSkills, Form.ext, FormPublisher and FormPromo are GPL-3.0-only.
 <!-- licences:end -->
 
 ## Help and contributing
