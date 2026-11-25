@@ -43,8 +43,11 @@ Download from **[formai.studio](https://formai.studio/apps/)**. Every release is
 | [FormTray](https://formai.studio/formtray/) | One dock icon for every FormAI app: switch, launch and arrange the family |
 | [Form.ext](https://formai.studio/formext/) | The extension studio: start from a working project, preview it in a simulated app, check it against the contract, then run, sign and publish it |
 | [FormSculpt](https://formai.studio/formsculpt/) | 3D sculpting and modeling, with a Rust engine and a command set agents can drive |
+| [FormCAD](https://formai.studio/formcad/) | CAD studio: 2D drafting, parametric parts, NURBS surfaces and automation on OpenCascade |
 | [FormFabric](https://formai.studio/formfabric/) | Garment pattern design and cloth simulation: draw patterns, sew, drape and export |
+| [FormMorpheus](https://formai.studio/formmorpheus/) | Animation studio: draw frame by frame, keyframe or perform live on a timeline |
 | [FormTools](https://formai.studio/formtools/) | Viewers for almost any file, batch image tools, 3D viewing and desktop utilities in one window |
+| [FormPublisher](https://formai.studio/formpublisher/) | Open FormWeb sites, check every route, package them and prepare them for hosts |
 <!-- apps:end -->
 
 More apps are on the way; [formai.studio/apps](https://formai.studio/apps/) shows what is coming next.
@@ -52,7 +55,7 @@ More apps are on the way; [formai.studio/apps](https://formai.studio/apps/) show
 ## Licences
 
 <!-- licences:start -->
-Every repository states its own licence. Most apps are Apache-2.0; FormPortal, FormMCP, FormSkills and Form.ext are GPL-3.0-only.
+Every repository states its own licence. Most apps are Apache-2.0; FormPortal, FormMCP, FormSkills, Form.ext and FormPublisher are GPL-3.0-only.
 <!-- licences:end -->
 
 ## Help and contributing
