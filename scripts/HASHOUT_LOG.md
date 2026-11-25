@@ -3,7 +3,23 @@
 Living log of all comment content, explainers, rationale, TODOs and removed code for the scripts and the workflow in this repository. The source files stay comment-free; everything they would have said lives here, indexed. Read this first, then edit code surgically.
 
 Current build version: none (this repository has no version)
-Last updated: 2026-11-21 · the page lists the 26 apps the site shows as available: nine rows added by hand, the 17 others untouched
+Last updated: 2026-11-24 · the page lists the 29 apps the site shows as available: three rows added by hand (FormCAD, FormMorpheus, FormPublisher), the 26 others untouched
+
+### profile/README.md · the table lists the 29 apps that are out, three rows added by hand
+- refers-to: profile/README.md (between `apps:start` and `apps:end`, and the licence sentence); scripts/apps_table.py (not changed)
+- kind: change
+- logged: 2026-11-24
+
+The owner asked for the page to carry the new releases. It listed 26 apps. The site's apps page shows 29 as available on 24 November: FormCAD, FormMorpheus and FormPublisher came out since the 21st (formcompiler registered FormMorpheus and FormPublisher in 0.21.0; its `releases.json` records formCAD v0.28.0 on the 23rd).
+
+Their three rows were added by hand, as the nine of 21 November were and for the same reason, and the 26 existing rows were not touched.
+
+- Order: the site's own product order. FormCAD after FormSculpt, FormMorpheus after FormFabric, FormPublisher after FormTools.
+- Text: each app's one-line `catalog.summary` in formcompiler's registry (0.22.0, read on 24 November), without its last full stop. The family spec takes its summaries from there.
+- Links: `formai.studio/formcad/`, `/formmorpheus/` and `/formpublisher/`, each read from the site's apps page on 24 November.
+- Licence sentence: FormPublisher is GPL-3.0-only in the registry, so it joins the named apps, after Form.ext. FormCAD and FormMorpheus are Apache-2.0.
+
+Still open, as before: `LISTING_RULE` and the generator. All three new apps are `prelaunch` in the registry, like most of the page.
 
 ### profile/README.md · the table lists the 26 apps that are out, nine rows added by hand
 - refers-to: profile/README.md (between `apps:start` and `apps:end`); scripts/apps_table.py :: LISTING_RULE (not changed)
