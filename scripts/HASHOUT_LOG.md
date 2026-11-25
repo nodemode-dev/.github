@@ -3,7 +3,22 @@
 Living log of all comment content, explainers, rationale, TODOs and removed code for the scripts and the workflow in this repository. The source files stay comment-free; everything they would have said lives here, indexed. Read this first, then edit code surgically.
 
 Current build version: none (this repository has no version)
-Last updated: 2026-11-24 · the page lists the 29 apps the site shows as available, and the three of the 25 November launch (FormRig, FormCraft, FormPromo); 32 rows
+Last updated: 2026-11-25 · the page lists the 32 apps the site shows as available: the three of the 25 November launch are FormNET, FormSlot and FormSubstrate, and the rows for FormRig, FormCraft and FormPromo are gone until those apps are out
+
+### profile/README.md · the 25 November launch was FormNET, FormSlot and FormSubstrate; the three wrong rows are replaced
+- refers-to: profile/README.md (between `apps:start` and `apps:end`, and the licence sentence); scripts/apps_table.py (not changed)
+- kind: fix
+- logged: 2026-11-25
+
+The entry below was written on 24 November from formcompiler's 0.22.0 changelog, which named FormRig, FormCraft and FormPromo for 25 November. On the 25th the owner changed the two groups' places: FormNET, FormSlot and FormSubstrate came out on 25 November, and FormRig, FormCraft and FormPromo follow on 28 November (formcompiler 0.23.0's changelog records it). The page reached `main` with the earlier three rows, so it named three apps that are not out, with links that do not answer, and left out the three that are.
+
+- Removed: the rows for FormRig, FormCraft and FormPromo. They come back when those apps are out.
+- Added: FormNET, FormSlot and FormSubstrate, each where the site's apps page shows it on 25 November: FormNET after FormSculpt, FormSlot after FormMorpheus, FormSubstrate after FormTools. The page says 32 apps can be used now, and the table has 32 rows in the same order from Form.ext on.
+- Text: each app's `catalog.summary` in formcompiler's registry (0.23.0), without its last full stop.
+- Links: `formai.studio/formnet/`, `/formslot/` and `/formsubstrate/`, each read from the site's apps page on 25 November.
+- Licence sentence: FormPromo leaves it. FormSlot and FormSubstrate are GPL-3.0-only in the registry and in their LICENSE files and are named last; FormNET is Apache-2.0.
+
+Still open, as before: `LISTING_RULE` and the generator; the rows are written by hand.
 
 ### profile/README.md · three rows for the Group 6 launch of 25 November, written the day before
 - refers-to: profile/README.md (between `apps:start` and `apps:end`, and the licence sentence)
